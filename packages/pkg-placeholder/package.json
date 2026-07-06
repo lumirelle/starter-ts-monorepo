@@ -28,6 +28,10 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">22",
+    "bun": ">1"
+  },
   "publishConfig": {
     "access": "public"
   },
