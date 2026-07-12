@@ -31,6 +31,7 @@ export default {
     '@unocss/reset',
     '@vueuse/core',
     'floating-vue',
+    'oxc-minify',
     'pinia',
     'uno.css',
   ],
