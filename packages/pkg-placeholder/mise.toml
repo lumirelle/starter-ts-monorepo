@@ -1,5 +1,5 @@
 [env]
-_.path = ["./node_modules/.bin"]
+_.path = ['{{config_root}}/node_modules/.bin']
 
 [tasks.dev]
 run = "tsdown --watch"
@@ -8,10 +8,4 @@ run = "tsdown --watch"
 run = "tsdown"
 
 [tasks.start]
-run = "bun ./src/index.ts"
-
-[tasks.publish]
-run = [
-  "bun pm pack --filename {{ config_root }}/release.tgz",
-  "npm publish {{ config_root }}/release.tgz --access public --tag latest",
-]
+run = "nub ./src/index.ts"
