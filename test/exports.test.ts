@@ -2,7 +2,7 @@ import { describePackagesApiSnapshots } from 'tsnapi/vitest'
 
 describePackagesApiSnapshots({
   filter({ packageName }) {
-    if (packageName.includes('node_modules')) {
+    if (['node_modules', '@typescript/native-preview', 'vscode-jsonrpc'].some(str => packageName.includes(str))) {
       return false
     }
     return true
