@@ -28,7 +28,7 @@ KNIP_DISABLE_RAW_TRANSFER = 1
 [task_config.input_groups]
 deps = ["**/package.json", "nub.lock"]
 hk = ["*.js", "*.mjs", "*.cjs", "*.jsx", "*.ts", "*.mts", "*.cts", "*.tsx", "*.vue", "*.json", "*.jsonc", "*.yaml", "*.yml", "*.toml", "*.md", "*.mdc", "*.mdx", "*.lua", "hk.pkl"]
-vitest = ["src", "test", "fixtures"]
+vitest = ["packages/**/src", "package/**/test", "paclages/**/dist"]
 
 [tasks.dev]
 description = "Run the development build with hot reloading."
@@ -91,7 +91,7 @@ arg "[rest]" var=#true help="Additional arguments to pass to the test runner"
 run = '''
 vitest {{ '' if usage.watch else 'run' }} {{ usage.rest | join(sep=' ') if usage.rest else '' }}
 '''
-sources = ["@group:deps", "packages/**/src", "package/**/test", "paclages/**/dist"]
+sources = ["@group:deps", "@group:vitest"]
 outputs = []
 cache = { enabled = true }
 
