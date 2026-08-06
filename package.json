@@ -18,41 +18,41 @@
     ],
     "catalogs": {
       "dev": {
-        "taze": "^19.16.0"
+        "taze": "^19.17.2"
       },
       "types": {
         "@lumirelle/tsconfig": "^0.1.6",
         "@types/node": "^26.1.2",
-        "typescript": "npm:typescript-native-bridge@^6.0.3-bridge.7.tsgo.7.0.2"
+        "typescript": "npm:typescript-native-bridge@^6.0.3-bridge.10.tsgo.7.0.2"
       },
       "build": {
         "tsdown": "^0.22.14"
       },
       "docs": {
         "@iconify-json/svg-spinners": "^1.2.4",
-        "@shikijs/vitepress-twoslash": "^4.3.1",
+        "@shikijs/vitepress-twoslash": "^4.4.2",
         "@unocss/reset": "^66.7.5",
         "@vueuse/core": "^14.4.0",
         "floating-vue": "^5.2.2",
-        "oxc-minify": "^0.141.0",
+        "oxc-minify": "^0.143.0",
         "pinia": "^4.0.2",
         "unocss": "^66.7.5",
         "unplugin-vue-components": "^32.1.0",
-        "vite": "^8.1.5",
-        "vitepress": "^2.0.0-alpha.18",
+        "vite": "^8.2.0",
+        "vitepress": "^2.0.0-alpha.19",
         "vitepress-plugin-group-icons": "^1.7.6",
-        "vue": "^3.5.40"
+        "vue": "^3.5.41"
       },
       "check": {
         "@antfu/eslint-config": "^9.2.0",
         "@arethetypeswrong/cli": "^0.18.5",
         "@lumirelle/oxlint-config": "^0.13.0",
         "eslint": "^10.8.0",
-        "eslint-plugin-oxlint": "^1.76.0",
-        "knip": "^6.29.0",
-        "oxlint": "^1.76.0",
+        "eslint-plugin-oxlint": "^1.77.0",
+        "knip": "^6.31.0",
+        "oxlint": "^1.77.0",
         "oxlint-tsgolint": "^7.0.2001",
-        "publint": "^0.3.22"
+        "publint": "^0.3.23"
       },
       "test": {
         "@vitest/coverage-v8": "^4.1.10",
@@ -62,7 +62,7 @@
       "release": {
         "bumpp": "^12.1.1",
         "changelogithub": "^15.0.4",
-        "pkg-pr-new": "^0.0.82"
+        "pkg-pr-new": "^0.0.86"
       }
     }
   },

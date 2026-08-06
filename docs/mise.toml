@@ -1,11 +1,17 @@
 [env]
 _.path = ['{{config_root}}/node_modules/.bin']
 
+[task_config.input_groups]
+deps = ["package.json", "../nub.lock"]
+
 [tasks.dev]
 run = "vitepress dev"
 
 [tasks.build]
 run = "vitepress build"
+sources = ["@group:deps", "src", "tsconfig.json"]
+outputs = [".vitepress/dist"]
+cache = { enabled = true }
 
 [tasks.start]
 run = "vitepress preview"

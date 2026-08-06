@@ -1,11 +1,17 @@
 [env]
 _.path = ['{{config_root}}/node_modules/.bin']
 
+[task_config.input_groups]
+deps = ["package.json", "../../nub.lock"]
+
 [tasks.dev]
 run = "tsdown --watch"
 
 [tasks.build]
 run = "tsdown"
+sources = ["@group:deps", "src", "tsconfig.json"]
+outputs = ["dist"]
+cache = { enabled = true }
 
 [tasks.start]
 run = "nub ./src/index.ts"
