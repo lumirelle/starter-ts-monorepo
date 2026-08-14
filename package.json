@@ -2,12 +2,12 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "nub@0.6.0",
+  "packageManager": "nub@0.7.5",
   "devEngines": {
     "packageManager": {
       "name": "nub",
-      "version": "^0.6.0",
-      "onFail": "warn"
+      "version": "^0.7.5",
+      "onFail": "ignore"
     }
   },
   "workspaces": {
@@ -18,39 +18,39 @@
     ],
     "catalogs": {
       "dev": {
-        "taze": "^19.17.2"
+        "taze": "^20.0.1"
       },
       "types": {
         "@lumirelle/tsconfig": "^0.1.6",
-        "@types/node": "^26.1.2",
-        "typescript": "npm:typescript-native-bridge@^6.0.3-bridge.10.tsgo.7.0.2"
+        "@types/node": "^26.2.0",
+        "typescript": "npm:typescript-native-bridge@^6.0.3-bridge.12.tsgo.7.0.2"
       },
       "build": {
         "tsdown": "^0.22.14"
       },
       "docs": {
         "@iconify-json/svg-spinners": "^1.2.4",
-        "@shikijs/vitepress-twoslash": "^4.4.2",
+        "@shikijs/vitepress-twoslash": "^4.4.3",
         "@unocss/reset": "^66.7.5",
         "@vueuse/core": "^14.4.0",
         "floating-vue": "^5.2.2",
-        "oxc-minify": "^0.143.0",
-        "pinia": "^4.0.2",
+        "oxc-minify": "^0.144.0",
+        "pinia": "^4.0.3",
         "unocss": "^66.7.5",
         "unplugin-vue-components": "^32.1.0",
-        "vite": "^8.2.0",
+        "vite": "^8.2.1",
         "vitepress": "^2.0.0-alpha.19",
         "vitepress-plugin-group-icons": "^1.7.6",
         "vue": "^3.5.41"
       },
       "check": {
-        "@antfu/eslint-config": "^9.2.0",
+        "@antfu/eslint-config": "^9.3.0",
         "@arethetypeswrong/cli": "^0.18.5",
         "@lumirelle/oxlint-config": "^0.13.0",
-        "eslint": "^10.8.0",
-        "eslint-plugin-oxlint": "^1.77.0",
-        "knip": "^6.31.0",
-        "oxlint": "^1.77.0",
+        "eslint": "^10.8.1",
+        "eslint-plugin-oxlint": "^1.78.0",
+        "knip": "^6.32.2",
+        "oxlint": "^1.78.0",
         "oxlint-tsgolint": "^7.0.2001",
         "publint": "^0.3.23"
       },
@@ -60,7 +60,7 @@
         "vitest": "^4.1.10"
       },
       "release": {
-        "bumpp": "^12.1.1",
+        "bumpp": "^12.2.1",
         "changelogithub": "^15.0.4",
         "pkg-pr-new": "^0.0.86"
       }
