@@ -18,12 +18,12 @@
     ],
     "catalogs": {
       "dev": {
-        "taze": "^20.0.1"
+        "taze": "^21.1.0"
       },
       "types": {
         "@lumirelle/tsconfig": "^0.1.6",
-        "@types/node": "^26.2.0",
-        "typescript": "npm:typescript-native-bridge@^6.0.3-bridge.12.tsgo.7.0.2"
+        "@types/node": "^26.4.0",
+        "typescript": "npm:typescript-native-bridge@^6.0.3-bridge.15.tsgo.7.0.2"
       },
       "build": {
         "tsdown": "^0.22.14"
@@ -31,38 +31,38 @@
       "docs": {
         "@iconify-json/svg-spinners": "^1.2.4",
         "@shikijs/vitepress-twoslash": "^4.4.3",
-        "@unocss/reset": "^66.7.5",
+        "@unocss/reset": "^66.9.1",
         "@vueuse/core": "^14.4.0",
         "floating-vue": "^5.2.2",
-        "oxc-minify": "^0.144.0",
+        "oxc-minify": "^0.148.0",
         "pinia": "^4.0.3",
-        "unocss": "^66.7.5",
+        "unocss": "^66.9.1",
         "unplugin-vue-components": "^32.1.0",
-        "vite": "^8.2.1",
+        "vite": "^8.2.2",
         "vitepress": "^2.0.0-alpha.19",
         "vitepress-plugin-group-icons": "^1.7.6",
-        "vue": "^3.5.41"
+        "vue": "^3.5.42"
       },
       "check": {
         "@antfu/eslint-config": "^9.3.0",
         "@arethetypeswrong/cli": "^0.18.5",
         "@lumirelle/oxlint-config": "^0.13.0",
-        "eslint": "^10.8.1",
-        "eslint-plugin-oxlint": "^1.78.0",
-        "knip": "^6.32.2",
-        "oxlint": "^1.78.0",
+        "eslint": "^10.9.1",
+        "eslint-plugin-oxlint": "^1.80.0",
+        "knip": "^6.34.0",
+        "oxlint": "^1.80.0",
         "oxlint-tsgolint": "^7.0.2001",
-        "publint": "^0.3.23"
+        "publint": "^0.3.24"
       },
       "test": {
-        "@vitest/coverage-v8": "^4.1.10",
-        "tsnapi": "^1.2.0",
-        "vitest": "^4.1.10"
+        "@vitest/coverage-v8": "^4.1.11",
+        "tsnapi": "^1.4.2",
+        "vitest": "^4.1.11"
       },
       "release": {
-        "bumpp": "^12.2.1",
-        "changelogithub": "^15.0.4",
-        "pkg-pr-new": "^0.0.86"
+        "bumpp": "^12.2.2",
+        "changelogithub": "^15.0.5",
+        "pkg-pr-new": "^0.0.88"
       }
     }
   },
