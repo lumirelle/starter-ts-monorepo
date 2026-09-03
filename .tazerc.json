@@ -3,5 +3,5 @@
   "write": true,
   "interactive": true,
   "maturityPeriod": 1,
-  "recursive": true
+  "githubActions": false
 }
