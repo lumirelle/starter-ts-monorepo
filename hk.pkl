@@ -1,6 +1,6 @@
-amends "package://github.com/jdx/hk/releases/download/v1.57.0/hk@1.57.0#/Config.pkl"
+amends "package://github.com/jdx/hk/releases/download/v1.58.1/hk@1.58.1#/Config.pkl"
 
-import "package://github.com/jdx/hk/releases/download/v1.57.0/hk@1.57.0#/Builtins.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.58.1/hk@1.58.1#/Builtins.pkl"
 
 local linters = new Mapping<String, Step> {
   // Code
@@ -29,12 +29,12 @@ local linters = new Mapping<String, Step> {
         "*.mdc",
         "*.mdx",
       )
-    check = new Config.CommandSpec {
-      command = new Config.Command { argv = List("eslint", "--no-warn-ignored", "{{files}}") }
+    check = new CommandSpec {
+      command = new Command { argv = List("eslint", "--no-warn-ignored", "{{files}}") }
       effect = "read"
     }
-    fix = new Config.CommandSpec {
-      command = new Config.Command {
+    fix = new CommandSpec {
+      command = new Command {
         argv = List("eslint", "--no-warn-ignored", "--fix", "{{files}}")
       }
       effect = "write"
@@ -54,8 +54,8 @@ local linters = new Mapping<String, Step> {
   ["stylua"] = Builtins.stylua
   ["hk"] {
     glob = List("hk.pkl")
-    check = new Config.CommandSpec {
-      command = new Config.Command { argv = List("hk", "validate") }
+    check = new CommandSpec {
+      command = new Command { argv = List("hk", "validate") }
       effect = "read"
     }
   }
@@ -64,8 +64,8 @@ local linters = new Mapping<String, Step> {
   ["attw"] {
     glob = List("packages/**/*")
     workspace_indicator = "package.json"
-    check = new Config.CommandSpec {
-      command = new Config.Command {
+    check = new CommandSpec {
+      command = new Command {
         argv = List("attw", "--pack", "{{workspace}}", "--profile", "esm-only")
       }
       effect = "write"
@@ -74,8 +74,8 @@ local linters = new Mapping<String, Step> {
   ["publint"] {
     glob = List("packages/**/*")
     workspace_indicator = "package.json"
-    check = new Config.CommandSpec {
-      command = new Config.Command {
+    check = new CommandSpec {
+      command = new Command {
         argv = List("publint", "{{workspace}}", "--pack", "npm")
       }
       effect = "write"
