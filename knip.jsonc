@@ -1,7 +1,9 @@
 {
   "ignoreFiles": [
     // Snapshots
-    "test/__snapshots__/**"
+    "test/__snapshots__/**",
+    // Loaded by taze at runtime; knip has no plugin for it
+    "taze.config.js"
   ],
   "ignoreDependencies": [
     // Build tools
