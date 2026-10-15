@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/antfu-collective/taze/refs/heads/main/schema.json",
+  "recursive": true,
   "write": true,
   "interactive": true,
   "maturityPeriod": 1,
