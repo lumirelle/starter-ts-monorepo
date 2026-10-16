@@ -3,7 +3,7 @@ monorepo_root = true
 [tools]
 # Environments
 node = 'latest'
-'github:nubjs/nub' = 'latest'
+nub = 'latest'
 # Linters & Formatters
 hk = 'latest'
 stylua = 'latest'
