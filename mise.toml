@@ -103,4 +103,5 @@ description = 'Publish the package.'
 run = "nub publish --recursive --provenance"
 
 [tasks.publish-commit]
-run = "pkg-pr-new publish packages/*"
+run = "echo '🎃 Just placeholder.'"
+# run = "pkg-pr-new publish packages/*"
