@@ -90,7 +90,7 @@ export default defineConfig({
     },
     codeTransformers: [transformerTwoslash()],
     languages: ['js', 'jsx', 'ts', 'tsx'],
-    config: (md) => {
+    config: md => {
       md.use(groupIconMdPlugin)
     },
   },

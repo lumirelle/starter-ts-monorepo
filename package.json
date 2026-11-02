@@ -44,14 +44,15 @@
         "vue": "^3.5.44"
       },
       "check": {
-        "@antfu/eslint-config": "^9.5.1",
         "@arethetypeswrong/cli": "^0.18.5",
-        "@lumirelle/oxlint-config": "^0.14.0",
-        "eslint": "^10.12.0",
-        "eslint-plugin-oxlint": "^1.88.0",
+        "@lumirelle/linter-config": "^0.1.0",
+        "@lumirelle/linter-plugins-eslint": "^0.1.0",
+        "@lumirelle/linter-plugins-oxlint": "^0.1.0",
+        "eslint": "^10.14.0",
         "knip": "^6.41.0",
-        "oxlint": "^1.88.0",
-        "oxlint-tsgolint": "^7.0.2004",
+        "oxfmt": "^0.75.0",
+        "oxlint": "^1.90.0",
+        "oxlint-tsgolint": "^7.0.2005",
         "publint": "^0.3.25"
       },
       "test": {
@@ -67,17 +68,18 @@
     }
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:check",
     "@arethetypeswrong/cli": "catalog:check",
-    "@lumirelle/oxlint-config": "catalog:check",
+    "@lumirelle/linter-config": "catalog:check",
+    "@lumirelle/linter-plugins-eslint": "catalog:check",
+    "@lumirelle/linter-plugins-oxlint": "catalog:check",
     "@lumirelle/tsconfig": "catalog:types",
     "@types/node": "catalog:types",
     "@vitest/coverage-v8": "catalog:test",
     "bumpp": "catalog:release",
     "changelogithub": "catalog:release",
     "eslint": "catalog:check",
-    "eslint-plugin-oxlint": "catalog:check",
     "knip": "catalog:check",
+    "oxfmt": "catalog:check",
     "oxlint": "catalog:check",
     "oxlint-tsgolint": "catalog:check",
     "pkg-pr-new": "catalog:release",
