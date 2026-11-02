@@ -3,14 +3,14 @@
     // Snapshots
     "test/__snapshots__/**",
     // Loaded by taze at runtime; knip has no plugin for it
-    "taze.config.js"
+    "taze.config.js",
   ],
   "ignoreDependencies": [
     // Build tools
     "tsdown",
     // Quality
-    "@lumirelle/oxlint-config",
     "@arethetypeswrong/cli",
+    "oxfmt",
     "publint",
     // Node.js dependencies manager
     "taze",
@@ -25,6 +25,6 @@
     "floating-vue",
     "oxc-minify",
     "pinia",
-    "uno.css"
-  ]
+    "uno.css",
+  ],
 }
