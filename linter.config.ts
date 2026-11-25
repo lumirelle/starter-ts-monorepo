@@ -15,5 +15,5 @@ export const options = {
     typeCheck: true,
   },
   // The root README is a symlink into `packages/`; the linters would follow it twice.
-  ignores: ['.agents/**', '.claude/**', 'test/__snapshots__/**', '/README.md'],
+  ignores: ['test/__snapshots__/**', '/README.md'],
 } satisfies Options
