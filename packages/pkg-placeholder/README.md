@@ -17,7 +17,7 @@ _{description}_
 
 This starter recommends using [NPM Trusted Publisher](https://github.com/e18e/ecosystem-issues/issues/201), where the release is done on CI to ensure the security of the packages.
 
-To do so, you need to run `nub publish --recursive` manually **for each package** the very first time to create them on npm, and then run `npm trust` (npm v11.10+) **for each package** to configure Trusted Publisher.
+To do so, you need to run `nub publish --recursive` manually the very first time to create them on npm, and then run `npm trust` (npm v11.10+) **for each package** to configure Trusted Publisher.
 
 Then for the future releases, you can run `mise run release` to do the release and the GitHub Actions will take care of the release process.
 
