@@ -1,4 +1,4 @@
-# @lumirelle/pkg-placeholder
+# Starter for TypeScript Monorepo
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -11,15 +11,13 @@
 >
 > This is a personal fork of [antfu/starter-monorepo](https://github.com/antfu/starter-monorepo) with some customizations.
 
-_description_
+_{description}_
 
 ## Note for Developers
 
 This starter recommends using [NPM Trusted Publisher](https://github.com/e18e/ecosystem-issues/issues/201), where the release is done on CI to ensure the security of the packages.
 
-To do so, you need to run `nub publish --recursive` manually **for each package** the very first time to create it on npm (you can also refer to [this helpful Bash script](https://github.com/lumirelle/workflows/blob/v3/.github/workflows/release.yml#L51-L55), `packages` in that script is a path regex to the folder contains your packages).
-
-Then, you should go to `https://www.npmjs.com/package/<your-package-name>/access` to set the connection to your GitHub repo. There also a useful cli tool can help you open your packages at once called [`open-packages-on-npm`](https://github.com/antfu/open-packages-on-npm).
+To do so, you need to run `nub publish --recursive` manually **for each package** the very first time to create them on npm, and then run `npm trust` (npm v11.10+) **for each package** to configure Trusted Publisher.
 
 Then for the future releases, you can run `mise run release` to do the release and the GitHub Actions will take care of the release process.
 
@@ -45,7 +43,7 @@ Then for the future releases, you can run `mise run release` to do the release a
 [bundle-href]: https://bundlephobia.com/result?p=@lumirelle/pkg-placeholder
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=18181B&colorB=F0DB4F
 [jsdocs-href]: https://www.jsdocs.io/package/@lumirelle/pkg-placeholder
-[codecov-src]: https://img.shields.io/codecov/c/gh/lumirelle/pkg-placeholder/main?style=flat&colorA=18181B&colorB=F0DB4F
-[codecov-href]: https://codecov.io/gh/lumirelle/pkg-placeholder
-[license-src]: https://img.shields.io/github/license/lumirelle/pkg-placeholder.svg?style=flat&colorA=18181B&colorB=F0DB4F
-[license-href]: https://github.com/lumirelle/pkg-placeholder/blob/main/LICENSE.md
+[codecov-src]: https://img.shields.io/codecov/c/gh/lumirelle/starter-ts-monorepo/main?style=flat&colorA=18181B&colorB=F0DB4F
+[codecov-href]: https://codecov.io/gh/lumirelle/starter-ts-monorepo
+[license-src]: https://img.shields.io/github/license/lumirelle/starter-ts-monorepo.svg?style=flat&colorA=18181B&colorB=F0DB4F
+[license-href]: https://github.com/lumirelle/starter-ts-monorepo/blob/main/LICENSE.md
